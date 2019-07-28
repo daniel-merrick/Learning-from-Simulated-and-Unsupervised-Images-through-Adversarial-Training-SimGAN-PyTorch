@@ -18,7 +18,7 @@ What is this project. What does it do? How does it work? Fix image sizes. Give b
 In development! Documentation and usage information is currently being uploaded. Results will be added in a few days.
 
 ## Results
-Columns 1, 3, 5 and 7 are the input syntheric images (Unity Eyes). 
+Columns 1, 3, 5 and 7 are the input syntheric images (Unity Eyes). <br/>
 Columns 2, 4, 6 and 8 are the refined images (Unity Eyes + Realism)
 
 Learning Rate: 0.001 <br/>
