@@ -21,7 +21,13 @@ In development! Documentation and usage information is currently being uploaded.
 Columns 1, 3, 5 and 7 are the input syntheric images (Unity Eyes). 
 Columns 2, 4, 6 and 8 are the refined images (Unity Eyes + Realism)
 
-![Results](https://github.ford.com/DMERRIC5/Learning-from-Simulated-and-Unsupervised-Images-through-Adversarial-Training-SimGAN-PyTorch-/blob/master/images/34_99700.jpg)
+Learning Rate: 0.001
+K_R: 2
+Delta (penalty on reconstuction loss): 0.75
+Batch Size: 512
+Buffer Size: 128000
+Num Steps: 100000
+![Results](https://github.com/dmerrick520/Learning-from-Simulated-and-Unsupervised-Images-through-Adversarial-Training-SimGAN-PyTorch/blob/master/images/001_2_P75_512_128000_100000.jpg)
 
 ## Installation
 Provide step by step series of examples and explanations about how to get a development env running.
