@@ -15,7 +15,7 @@ What is this project. What does it do? How does it work? Fix image sizes. Give b
 ![network_diagram](https://github.ford.com/DMERRIC5/Learning-from-Simulated-and-Unsupervised-Images-through-Adversarial-Training-SimGAN-PyTorch-/blob/master/images/network_architecture.png)
 
 ## Build status
-In development! Documentation and usage information is currently being uploaded. Results will be added in a few days.
+In development! Documentation and usage information is currently being uploaded. More detailed results will be added eventually.
 
 ## Results
 Columns 1, 3, 5 and 7 are the input syntheric images (Unity Eyes). <br/>
