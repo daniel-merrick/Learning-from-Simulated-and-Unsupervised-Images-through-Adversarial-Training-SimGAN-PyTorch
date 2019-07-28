@@ -4,7 +4,7 @@ This repository is a work in progress and is updated regularly. Documentation an
 This repository is an implementation of [this paper](https://arxiv.org/abs/1612.07828) in PyTorch. Many of the repositories I found that were also written in PyTorch either were (1) buggy or (2) incomplete. This repository modifies other repos and makes this implementation more complete and hopefully easier to use. 
 
 ## Motivation
-This repository was completed over the course of my summer internship with Ford. [This paper](https://arxiv.org/abs/1612.07828) presents a method to add realism to unreal or synthetic data, allowing us to train on a labeled set of synthetic data that matches the distribution of realistic data 'better,' resulting in better testing accuracy. Fix later.
+[This paper](https://arxiv.org/abs/1612.07828) presents a method to add realism to unreal or synthetic data, allowing us to train on a labeled set of synthetic data that matches the distribution of realistic data 'better,' resulting in better testing accuracy. Finish later.
 
 
 ## Overview
