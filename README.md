@@ -27,6 +27,7 @@ Delta (penalty on reconstuction loss): 0.75
 Batch Size: 512
 Buffer Size: 128000
 Num Steps: 100000
+
 ![Results](https://github.com/dmerrick520/Learning-from-Simulated-and-Unsupervised-Images-through-Adversarial-Training-SimGAN-PyTorch/blob/master/images/001_2_P75_512_128000_100000.jpg)
 
 ## Installation
