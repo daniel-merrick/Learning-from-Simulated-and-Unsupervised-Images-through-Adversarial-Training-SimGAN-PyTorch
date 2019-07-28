@@ -49,6 +49,6 @@ Let people know how they can contribute into your project. A [contributing guide
 Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. Fix later.
 
 [This is the paper that this repo is based off of](https://arxiv.org/abs/1612.07828)
-This repo is largely based on [this guys repo](https://github.com/automan000/SimGAN_PyTorch) but I fixed some of the bugs and reorganized the code so that it is hopefully easier to use.
+This repo is largely based on [this guys repo](https://github.com/automan000/SimGAN_PyTorch) but I fixed some of the bugs, reorganized the code, and added code to train & test a gaze estimator.
 
 #### Anything else that seems useful
