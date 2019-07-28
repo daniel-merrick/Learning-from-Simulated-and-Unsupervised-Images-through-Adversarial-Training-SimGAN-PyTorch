@@ -1,5 +1,5 @@
 # Learning from Simulated and Unsupervised Images through Adversarial Training (SimGAN, PyTorch)
-This repository is a work in progress and is updated regularly. Documentation and usage may be unclear right now.
+This repository is a work in progress and is updated regularly. Documentation and usage may be unclear right now, any questions or concerns are welcome!.
 
 This repository is an implementation of [this paper](https://arxiv.org/abs/1612.07828) in PyTorch. Many of the repositories I found that were also written in PyTorch either were (1) buggy or (2) incomplete. This repository modifies other repos and makes this implementation more complete and hopefully easier to use. 
 
