@@ -1,8 +1,5 @@
 FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu16.04 
 
-ENV http_proxy http://internet.ford.com:83
-ENV https_proxy http://internet.ford.com:83
-
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y --no-install-recommends \
 	 python \
