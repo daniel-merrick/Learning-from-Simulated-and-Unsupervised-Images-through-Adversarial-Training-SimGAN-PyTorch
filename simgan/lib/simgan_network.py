@@ -42,7 +42,6 @@ class Refiner(nn.Module):
 		''' Image size is [1, 35, 55] '''
 		self.conv_1 = nn.Sequential(
 			nn.Conv2d(in_channels=1, out_channels=nb_features, kernel_size=3, stride=1, padding=1),
-			nn.BatchNorm2d(nb_features),
 			nn.LeakyReLU()
 		)
 
