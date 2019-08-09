@@ -10,10 +10,6 @@ This repository is an implementation of [this paper](https://arxiv.org/abs/1612.
 ## Overview
 What is this project. What does it do? How does it work? Fix image sizes. Give brief explanations to the project. Fix later.
 
-![the_refiner](https://github.ford.com/DMERRIC5/Learning-from-Simulated-and-Unsupervised-Images-through-Adversarial-Training-SimGAN-PyTorch-/blob/master/images/refiner.png)
-
-![network_diagram](https://github.ford.com/DMERRIC5/Learning-from-Simulated-and-Unsupervised-Images-through-Adversarial-Training-SimGAN-PyTorch-/blob/master/images/network_architecture.png)
-
 ## Build status
 In development! Documentation and usage information is currently being uploaded. More detailed results will be added eventually.
 
