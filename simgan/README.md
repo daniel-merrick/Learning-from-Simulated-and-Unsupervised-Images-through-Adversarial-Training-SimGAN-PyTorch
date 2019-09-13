@@ -1,10 +1,7 @@
-This folder will include code for training / testing the SimGAN network
-
 ## Overview
-What is this sub-README and why is it here.
+This folder includes code for training and testing the refiner network.
 
 ## Usage
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
-Include links to the sub READMEs in the gaze_estimator and simgan folders.
+If you are training or testing the SimGAN network, first update the train and test config files and second update the main file to invoke the proper method call.
 
 #### Anything else that seems useful
