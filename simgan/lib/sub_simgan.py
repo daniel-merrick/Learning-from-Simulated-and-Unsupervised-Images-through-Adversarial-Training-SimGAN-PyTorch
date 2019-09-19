@@ -162,30 +162,6 @@ class SubSimGAN:
 			self.real_data_loader 	 = Data.DataLoader(real_data, batch_size=self.cfg.batch_size, shuffle=True, pin_memory=True, drop_last=True, num_workers=3)
 			self.real_data_iter      = self.loop_iter(self.real_data_loader)
 		
-	''' 	gradient penalty is used for 
-		Wasserstein GAN. This penalty is added 
-		to the loss. '''
-	def calc_gradient_penalty(self, real_data, fake_data):
-		alpha = torch.rand(self.cfg.batch_size, 1)
-		alpha = alpha.expand(self.cfg.batch_size, int(real_data.nelement() / self.cfg.batch_size)).contiguous()
-		alpha = alpha.view(self.cfg.batch_size, 1, 35, 55)
-		alpha = alpha.cuda(self.cfg.cuda_num)
-		
-		interpolates = alpha * real_data.detach() + ((1 - alpha) * fake_data.detach())
-		
-		interpolates = interpolates.cuda(self.cfg.cuda_num)
-		interpolates.requires_grad_(True)
-
-		d_interps = self.D(interpolates)
-
-		gradients = autograd.grad(outputs=d_interps, inputs=interpolates,
-					  grad_outputs=torch.ones(d_interps.size()).cuda(self.cfg.cuda_num),
-					  create_graph=True, retain_graph=True, only_inputs=True)[0]
-		
-		gradients = gradients.view(gradients.size(0), -1)
-		gradient_penalty = ((gradients.norm(2, dim=1) - 1) ** 2).mean() * 10
-
-		return gradient_penalty
 
 	''' simple function to return accuracy '''
 	def get_accuracy(self, output, type='real'):
