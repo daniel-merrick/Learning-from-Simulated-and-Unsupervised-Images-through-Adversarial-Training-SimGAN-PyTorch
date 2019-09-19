@@ -94,10 +94,7 @@ class TrainSimGAN(SubSimGAN):
 		
 		self.accuracy_refined = self.get_accuracy(real_predictions, 'refine')
 		self.loss_refined = self.local_adversarial_loss(refined_predictions, refined_labels)
-	
-
-		# gradient_penalty = self.calc_gradient_penalty(real_images, refined_images)
-	
+		
 		''' this is the loss used to backprop '''
 		discriminator_loss = (self.loss_refined + self.loss_real) / 2 #+ gradient_penalty
 	
@@ -196,38 +193,8 @@ class TrainSimGAN(SubSimGAN):
 			for idx in range(self.cfg.k_d):
 				''' update discriminator and return some important info for printing '''
 				self.update_discriminator(pretrain=False)
-			
-			"""
-			''' Train Discriminator '''
-			self.R.eval()
-			self.R.train_mode(False)
 
-			self.D.train()
-			self.D.train_mode(True)
-
-			for idx in range(self.cfg.k_d):
-				''' update discriminator and return some important info for printing '''
-				self.update_discriminator(pretrain=False)
 				
-				#''' Weight Clipping -- Include this for more stable training
-				#	something about lipshitz variables... aka WGAN '''
-				#for p in self.D.parameters():
-				#	p.data.clamp_(-self.c, self.c)
-
-
-		
-			''' Train Refiner '''
-			self.D.eval()
-			self.D.train_mode(False)
-			
-			self.R.train()
-			self.R.train_mode(True)
-
-			for idx in range(self.cfg.k_r):
-				''' update refiner and return some important info for printing '''
-				self.update_refiner(pretrain=False)
-			"""
-
 			if step % self.cfg.print_interval == 0 and step > 0:
 				self.print_refiner_info(step, pretrain=False)
 				self.print_discriminator_info(step, pretrain=False)
