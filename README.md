@@ -23,19 +23,16 @@ Num Steps: 100000 <br/>
 ![Results](https://github.com/dmerrick520/Learning-from-Simulated-and-Unsupervised-Images-through-Adversarial-Training-SimGAN-PyTorch/blob/master/images/001_2_P75_512_128000_100000.jpg)
 
 ## Installation
-Docker file is included. Needs updating on how to use docker and deploy.
+See docker file for the required packages & libraries.
 
 ## Usage
-Needs updating.
 
-[This is the link to the gaze_estimator README with instructions on usage](/gaze_estimator/README.md)
+See [gaze estimator README](/gaze_estimator/README.md) for instructions on training and testing gaze estimator.
 
-[This is the link to the simgan README with instructions on usage](/simgan/README.md)
+See [simgan README](/simgan/README.md) for instructions on training and testing the simgan.
 
 
 ## Credits
 
 This project is based on [this paper](https://arxiv.org/abs/1612.07828).
-This repo is largely built from [automan000's repository](https://github.com/automan000/SimGAN_PyTorch) but I fixed some of the bugs, reorganized the code, and added code to train & test a gaze estimator.
-
-#### Anything else that seems useful
+The repo is largely built from [automan000's repository](https://github.com/automan000/SimGAN_PyTorch) but I fixed some of the bugs, reorganized the code, and added code to train & test a gaze estimator.
